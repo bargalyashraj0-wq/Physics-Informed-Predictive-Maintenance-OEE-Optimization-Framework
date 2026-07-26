@@ -1,0 +1,131 @@
+{
+  "rul_regressor_metrics": {
+    "MAE_cycles": 13.82,
+    "RMSE_cycles": 20.79,
+    "R2": 0.5861,
+    "best_params": {
+      "subsample": 0.8,
+      "reg_lambda": 5.0,
+      "n_estimators": 600,
+      "min_child_weight": 5,
+      "max_depth": 3,
+      "learning_rate": 0.01,
+      "colsample_bytree": 0.6
+    }
+  },
+  "rul_top_shap_drivers": [
+    [
+      "flank_wear_VB_mm",
+      "11.966589"
+    ],
+    [
+      "cutting_speed_m_min",
+      "8.303626"
+    ],
+    [
+      "cutting_force_N",
+      "6.633962"
+    ],
+    [
+      "vib_rms_roll_mean_5",
+      "4.3380475"
+    ],
+    [
+      "temp_roll_mean_5",
+      "3.276848"
+    ],
+    [
+      "rpm",
+      "2.6866336"
+    ],
+    [
+      "vib_rms_roll_std_15",
+      "2.6672745"
+    ],
+    [
+      "vib_rms_roll_mean_15",
+      "2.1744294"
+    ],
+    [
+      "coolant_flow_Lmin",
+      "1.9227448"
+    ],
+    [
+      "feed_rate_mm_rev",
+      "1.8847967"
+    ]
+  ],
+  "state_classifier_metrics": {
+    "accuracy": 0.9991,
+    "macro_f1": 0.994,
+    "best_params": {
+      "subsample": 0.7,
+      "n_estimators": 300,
+      "max_depth": 3,
+      "learning_rate": 0.08,
+      "colsample_bytree": 0.6
+    },
+    "per_class": {
+      "Critical": {
+        "precision": 1.0,
+        "recall": 0.96875,
+        "f1-score": 0.9841269841269841,
+        "support": 32.0
+      },
+      "Degraded": {
+        "precision": 0.995850622406639,
+        "recall": 1.0,
+        "f1-score": 0.997920997920998,
+        "support": 240.0
+      },
+      "Healthy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 904.0
+      }
+    }
+  },
+  "state_top_shap_drivers": [
+    [
+      "flank_wear_VB_mm",
+      "2.1944957"
+    ],
+    [
+      "vib_rms_roll_mean_5",
+      "0.33776602"
+    ],
+    [
+      "spectral_kurtosis",
+      "0.29109308"
+    ],
+    [
+      "vibration_rms_ms2",
+      "0.2304872"
+    ],
+    [
+      "acoustic_emission_V",
+      "0.21521246"
+    ],
+    [
+      "spindle_temp_rise_C",
+      "0.20772666"
+    ],
+    [
+      "temp_roll_mean_5",
+      "0.16327216"
+    ],
+    [
+      "vib_rms_roll_std_15",
+      "0.15697886"
+    ],
+    [
+      "wear_rate_VB_per_cycle",
+      "0.14946656"
+    ],
+    [
+      "specific_cutting_energy_Jmm3",
+      "0.12929489"
+    ]
+  ]
+}

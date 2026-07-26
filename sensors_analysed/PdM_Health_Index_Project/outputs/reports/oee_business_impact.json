@@ -1,0 +1,30 @@
+{
+  "OEE_TBM_baseline_pct": 82.71,
+  "OEE_CBM_predictive_pct": 90.22,
+  "OEE_improvement_pct_points": 7.52,
+  "Availability_TBM_pct": 95.67,
+  "Availability_CBM_pct": 99.56,
+  "Quality_TBM_pct": 99.36,
+  "Quality_CBM_pct": 99.59,
+  "Performance_TBM_pct": 87.0,
+  "Performance_CBM_pct": 91.0,
+  "Unplanned_downtime_hours_avoided_per_month": 24.25,
+  "Monthly_downtime_cost_savings_INR": 1091250.0,
+  "Monthly_scrap_cost_savings_INR": 101150.0,
+  "Total_monthly_savings_INR": 1192400.0,
+  "Projected_annual_savings_INR": 14308800.0,
+  "assumptions": {
+    "shift_hours_per_day": 8,
+    "shifts_per_day": 3,
+    "days_per_month": 26,
+    "planned_cycle_time_sec": 42,
+    "unplanned_downtime_cost_per_hour_INR": 45000,
+    "avg_unplanned_stoppage_hours_TBM": 4.5,
+    "avg_unplanned_stoppage_hours_CBM": 0.75,
+    "current_unplanned_failures_per_month_TBM": 6,
+    "residual_failures_per_month_CBM": 1,
+    "scrap_cost_per_part_INR": 850,
+    "scrap_rate_reduction_pct": 0.35,
+    "baseline_scrap_parts_per_month": 340
+  }
+}
